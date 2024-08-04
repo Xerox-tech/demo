@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.active {
+    display: flex; /* Show the active slide */
+}
+
+#home {
+    background: linear-gradient(to bottom, #87ceeb, #ffffff); /* Sky white gradient */
+}
+
+.welcome-text {
+    position: relative;
+}
+
+.glow {
+    font-size: 3em;
+    color: black;
+    text-shadow: 0 0 10px yellow, 0 0 20px red;
+    animation: fly 5s infinite alternate; /* Flying effect */
+}
+
+.menu {
+    margin-top: 20px;
+}
+
+.menu button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+#detail {
+    background: #f0e68c; /* Change as desired for each detail */
+    color: #333;
+    padding: 20px;
+}
+
+.content {
+    display: none; /* Initially hide content */
+}
+
+.fade-in {
+    animation: fadeIn 0.5s forwards; /* Fade-in effect */
+}
+
+@keyframes fly {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
