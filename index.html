@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div id="home" class="slide active">
+        <div class="welcome-text">
+            <h1 class="glow">Welcome to My Portfolio</h1>
+            <div class="menu">
+                <button onclick="showDetail('name')">NAME</button>
+                <button onclick="showDetail('education')">EDUCATIONAL BACKGROUND</button>
+                <button onclick="showDetail('contact')">CONTACT</button>
+                <button onclick="showDetail('skills')">SKILLS</button>
+                <button onclick="showDetail('experience')">EXPERIENCES</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="detail" class="slide">
+        <div class="content">
+            <h2 id="detail-title"></h2>
+            <p id="detail-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
