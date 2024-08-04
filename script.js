@@ -34,3 +34,11 @@ function showDetail(detailType) {
     // Fade in content
     detailInfo.classList.add('fade-in');
 }
+
+function goBack() {
+    const detailSection = document.getElementById('detail');
+    const homeSection = document.getElementById('home');
+
+    detailSection.classList.remove('active'); // Hide detail
+    homeSection.classList.add('active'); // Show home
+}
