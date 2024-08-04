@@ -35,7 +35,7 @@ body {
     margin-top: 20px;
 }
 
-.menu button {
+.menu button, #back-button {
     margin: 0 10px;
     padding: 10px 20px;
     font-size: 1.2em;
@@ -43,7 +43,7 @@ body {
     cursor: pointer;
 }
 
-.menu button:hover {
+.menu button:hover, #back-button:hover {
     background-color: #f0f0f0;
     transition: background-color 0.3s;
 }
